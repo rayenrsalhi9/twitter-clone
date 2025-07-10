@@ -1,13 +1,22 @@
+:root {
+    --main-color: #1DA1F2;
+    --border-color: lightgray;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
+body {
+    padding: 20px 0;
+}
+
 /* typography and icons */
 
 h1{
-    color: #0F8CDF;
+    color: var(--main-color);
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -61,21 +70,21 @@ textarea{
 }
 
 button{
-    background-color: #1DA1F2;
+    background-color: var(--main-color);
     border: none;
     color: white;
     padding: 10px 19px;
     border-radius: 20px;
     width: 100%; 
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 /* tweet */
 
 .tweet{
-    border-top: 1px solid lightgray;
+    border-top: 1px solid var(--border-color);
     padding: 20px 0 0 0;
     width: 100%;
     margin: 15px 0;
@@ -100,7 +109,7 @@ button{
 }
 
 .tweet-reply{
-    border-top: 1px solid lightgray;
+    border-top: 1px solid var(--border-color);
     padding: 20px 0 0 0px;
     margin: 10px 0 10px 40px;
     width: 80%;
@@ -114,6 +123,7 @@ button{
 }
 
 .tweet-text{
+    margin-top: -5px;
     width: 207px;
     font-size: 14px;
     line-height: 20px;
@@ -122,9 +132,10 @@ button{
 /* images */
 
 .profile-pic{
-    border: 1px solid lightgray;
+    border: 1px solid var(--border-color);
     border-radius: 50%;
     width: 48px;
+    aspect-ratio: 1;
 }
 
 /* utility */
