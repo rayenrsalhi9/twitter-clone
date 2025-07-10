@@ -32,7 +32,7 @@ function handleTweetBtnClick(){
     const tweetInput = document.getElementById('tweet-input')
     
     tweetInput.value && tweetsData.unshift({
-        handle: `@Scrimba`,
+        handle: `@rayene123`,
         profilePic: `images/profile-pic.jpg`,
         likes: 0,
         retweets: 0,
